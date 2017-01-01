@@ -17,8 +17,8 @@ try
 		end if
 	end tell
 	
-	-- call python shell to attach TimeMachine.sparsebundle
-	do shell script "/usr/local/bin/python3 /Path to/attach.py"
+	-- call shell to attach TimeMachine.sparsebundle
+	do shell script "printf 'password' | hdiutil attach -stdinpass /Volumes/upriv/TimeMachine.sparsebundle"
 on error errs number errn
 	display dialog errs & " " & errn with icon 2
 	--error errs number errn  
