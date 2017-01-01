@@ -12,8 +12,8 @@ try
 		set mounted_Disks to list disks
 		--display dialog result as string
 		--set mounted_Disks to every disk whose (ejectable is true)
-		if mounted_Disks does not contain "upriv" then
-			mount volume "afp://192.168.0.66/upriv" as user name "username here" with password "password here"
+		if mounted_Disks does not contain "TimeMachine" then
+			mount volume "afp://192.168.0.66/TimeMachine" as user name "username here" with password "password here"
 		end if
 	end tell
 	
