@@ -25,7 +25,7 @@ try
 	-- do shell script "security find-generic-password -w -D 'disk image password' -l TimeMachine.sparsebundle | hdiutil attach -stdinpass /Volumes/TimeMachine/TimeMachine.sparsebundle"
 	
 	-- without password
-	-- do shell script "hdiutil attach -stdinpass /Volumes/TimeMachine/TimeMachine.sparsebundle"
+	-- do shell script "hdiutil attach /Volumes/TimeMachine/TimeMachine.sparsebundle"
 on error errs number errn
 	display dialog errs & " " & errn with icon 2
 	--error errs number errn  
