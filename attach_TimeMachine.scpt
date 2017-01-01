@@ -1,6 +1,6 @@
 try
 	-- (0) check server's response  
-	set max_retry to 2
+	set max_retry to 50
 	set k to 0
 	repeat while (do shell script "ping -c 1 192.168.0.66") contains "100% packet loss"
 		delay 5
